@@ -1,0 +1,153 @@
+/*Maps*/ 
+$encabezados:(
+    h1: $azul,
+    h2: $rosa,
+);
+
+$h1:map-get($encabezados, h1);
+$h2:map-get($encabezados, h2);
+/*Finaliza maps*/
+
+h1{
+    color: $h1;
+}
+
+h2{
+    color: $h2;
+}
+
+
+/*Cuerpo*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        .logo{
+            margin: 20px 0px 10px 120px;
+        }
+    }
+    h1{
+        text-align: center;
+        padding: 1px;
+        text-shadow: $bgneon;
+        font-family: 'Carrois Gothic SC', sans-serif;
+        font-size: 38px;
+        letter-spacing: 4px;
+        word-spacing: 1.5px;
+    }
+}
+
+
+/*Barra de navegación*/
+
+nav{
+    ul{
+        list-style: none;
+        font-size: 0;
+        li{
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            font-family: 'Carrois Gothic SC', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+     }
+    .menu{
+        list-style-type: none;
+        padding: 0%;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        margin: 50px;
+        li{
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 20px;
+                color: $azul;
+                &:hover{
+                    color: $rosa;
+                    transform: scale(1.2,1.2 );
+                }
+            }
+          }
+        }
+    }
+
+/*Finaliza barra de navegación*/
+
+
+
+/*Titulos y textos*/
+
+.texto{
+    margin: 20px 150px;
+    padding: 20px;
+    border-width: 5px;
+}
+
+h2{
+    text-shadow: $bgneon;
+    margin: 20px 0px;
+    padding: 0.5rem;
+    border: 3px solid $rosa;
+    border-radius: 13px;
+    display: inline-block;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.4px
+}
+
+
+h4{
+    margin: 0% 10%;
+    text-align: center;
+    padding: 0.50rem;
+    font-weight: bold;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 30px;
+    border: #4a0c63 solid 2%;
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    border-radius: 0.5rem;
+    opacity: 85%;
+}
+
+
+p{           
+    color: $celeste;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 20px;       
+    letter-spacing: 1.2px;      
+}
+
+/*Finaliza títulos y textos*/
+
+/*Footer*/
+
+.footer{
+    color: blueviolet;
+    
+    .derecho{
+        text-align: right;
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 15px;
+        }
+        .fab{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+}

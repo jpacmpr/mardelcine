@@ -1,0 +1,31 @@
+@mixin intro ($text){
+    text-align: $text;
+     h2{
+        color: $rosa;
+        text-shadow: $bgneon;
+        margin: 20px 0px;
+        padding: 0.5rem;
+        border: 3px solid $rosa;
+        border-radius: 13px;
+        display: inline-block;
+        font-family: 'Carrois Gothic SC', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1.4px
+    }
+    p{           
+        color: $celeste;
+        font-family: 'Carrois Gothic SC', sans-serif;
+        font-size: 20px;             
+        }
+    }
+
+.texto{
+    .introduccion{
+       @include intro (left)
+    }
+    .queVer{
+        @include intro (right)
+    }
+}
+
