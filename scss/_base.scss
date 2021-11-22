@@ -14,9 +14,6 @@ h1{
     color: $h1;
 }
 
-h2{
-    color: $h2;
-}
 
 
 /*Cuerpo*/
@@ -71,6 +68,7 @@ nav{
 }
 
 h2{
+    color: $h2;
     text-shadow: $bgneon;
     margin: 20px 0px;
     padding: 0.5rem;
@@ -80,7 +78,7 @@ h2{
     font-family: 'Carrois Gothic SC', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1.2px
+    letter-spacing: 1.2px;
 }
 
 

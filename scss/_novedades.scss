@@ -18,6 +18,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+            opacity: 1;
+            border: 2px solid $rosa;
+            }
+        }
     }
     .oro{
         background-image: url(../img/fondoeljuegodelcalamar.jpg);
@@ -54,7 +59,7 @@
         background-size: cover;
         grid-area: baja;
     }
-}
+    
 
 
 /*Trailers*/

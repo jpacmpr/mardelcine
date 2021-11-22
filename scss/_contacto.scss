@@ -1,18 +1,18 @@
-.flex_container{
+.flex-container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background:#222;
     justify-content: center;
     margin: 50px 30px;
+    .form{
+        min-width: 400px;
+        flex: 1;
+        text-align: center;
+        padding: 30px;
+    }
 }
 
-.form{
-    min-width: 400px;
-    flex: 1;
-    text-align: center;
-    padding: 30px;
-}
+
 
 .form__input{
     width: 100%;
@@ -23,29 +23,27 @@
     background: transparent;
     color: $celeste;
     font-size: 20px;
-}
-
-.form__input:focus {
-    background-color: #444;
-    outline: none;
+        &:focus{
+            background-color: #444;
+            outline: none;
+        }
 }
 
 
 .form textarea{
-    min-height: 140px;
+    min-height: 100px;
 }
 
 .form__img{
     flex: 1;
     padding: 10px;
     display: flex;
+    img{
+        width: 60%;
+        margin: auto;
+    }
 }
 
-.form__img img{
-    width: 30%;
-    margin: auto;
-    
-}
 
 .form input:hover{
     color: $azul;

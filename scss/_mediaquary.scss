@@ -13,7 +13,8 @@
 
 
   p {
-      font-size: 16px;   
+      font-size: 16px; 
+      letter-spacing: 1.3px    
   }
 
   .texto {
@@ -42,8 +43,12 @@
     padding: 0px;
     border-width: 10px;
     text-align: center;
+      iframe{
+        width: 50%;
+      }
+  }
 }
-}
+
 
 
 /*Para tablet*/ 
