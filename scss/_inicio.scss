@@ -20,12 +20,3 @@
         }
     }
 
-.texto{
-    .introduccion{
-       @include intro (left)
-    }
-    .queVer{
-        @include intro (right)
-    }
-}
-

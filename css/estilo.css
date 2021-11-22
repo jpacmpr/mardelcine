@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Maps*/
 /*Finaliza maps*/
+/*Color de los títulos*/
 h1 {
   color: #1DB9C3; }
 
@@ -31,35 +32,13 @@ body {
     letter-spacing: 4px;
     word-spacing: 1.5px; }
 
-/*Barra de navegación*/
-nav ul {
-  list-style: none;
-  font-size: 0; }
-  nav ul li {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-weight: bold;
-    font-size: 20px; }
+/*Menú*/
+nav ul li {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center; }
 
-nav .menu {
-  list-style-type: none;
-  padding: 0%;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
-  margin: 50px; }
-  nav .menu li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px;
-    color: #1DB9C3; }
-    nav .menu li a:hover {
-      color: #F56FAD;
-      transform: scale(1.2, 1.2); }
-
-/*Finaliza barra de navegación*/
 /*Titulos y textos*/
 .texto {
   margin: 20px 150px;
@@ -76,7 +55,7 @@ h2 {
   font-family: 'Carrois Gothic SC', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1.4px; }
+  letter-spacing: 1.2px; }
 
 h4 {
   margin: 0% 10%;
@@ -100,9 +79,10 @@ p {
 /*Finaliza títulos y textos*/
 /*Footer*/
 .footer {
-  color: blueviolet; }
+  color: blueviolet;
+  text-align: center; }
   .footer .derecho {
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     font-size: 13px;
     margin-top: 15px; }
@@ -110,45 +90,7 @@ p {
     font-size: 30px;
     margin-bottom: 20px; }
 
-.texto .introduccion {
-  text-align: left; }
-  .texto .introduccion h2 {
-    color: #F56FAD;
-    text-shadow: 0 0 1px #00b2ff, 0 0 2px #00b2ff, 0 0 3px #00b2ff, 0 0 4px #26687f, 0 0 8px #26687f;
-    margin: 20px 0px;
-    padding: 0.5rem;
-    border: 3px solid #F56FAD;
-    border-radius: 13px;
-    display: inline-block;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.4px; }
-  .texto .introduccion p {
-    color: #A6F6F1;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-size: 20px; }
-
-.texto .queVer {
-  text-align: right; }
-  .texto .queVer h2 {
-    color: #F56FAD;
-    text-shadow: 0 0 1px #00b2ff, 0 0 2px #00b2ff, 0 0 3px #00b2ff, 0 0 4px #26687f, 0 0 8px #26687f;
-    margin: 20px 0px;
-    padding: 0.5rem;
-    border: 3px solid #F56FAD;
-    border-radius: 13px;
-    display: inline-block;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.4px; }
-  .texto .queVer p {
-    color: #A6F6F1;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-size: 20px; }
-
-.conocenosAbajo {
+.textoDerecha {
   margin-top: 2rem;
   margin-bottom: 5rem;
   text-align: right; }
@@ -241,48 +183,62 @@ h3 {
   border-width: 10px;
   text-align: center; }
 
-.formulario {
-  color: #F56FAD;
-  font-family: 'Carrois Gothic SC', sans-serif;
-  font-weight: bold; }
+.flex_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #222;
+  justify-content: center;
+  margin: 50px 30px; }
 
-/*Grid header*/
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto; }
+.form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px; }
 
-/*Finaliza grid header*/
-/*Responsive*/
+.form__input {
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  border: none;
+  border-bottom: solid 3px #A6F6F1;
+  background: transparent;
+  color: #A6F6F1;
+  font-size: 20px; }
+
+.form__input:focus {
+  background-color: #444;
+  outline: none; }
+
+.form textarea {
+  min-height: 140px; }
+
+.form__img {
+  flex: 1;
+  padding: 10px;
+  display: flex; }
+
+.form__img img {
+  width: 30%;
+  margin: auto; }
+
+.form input:hover {
+  color: #1DB9C3; }
+
 /*Para móvil*/
 @media only screen and (max-width: 576px) {
-  .contenedor {
-    grid-template-columns: 20%;
-    grid-template-rows: 1fr 1fr;
-    margin: 0px; }
-  .menu {
-    margin: 0px;
-    padding: 0%;
-    width: 100%; }
-  .logo {
-    margin: 20px 0px 10px 100px; }
   h1 {
     margin-right: 100px; }
+  h2 {
+    font-size: 18px;
+    letter-spacing: 1.1px; }
   p {
     font-size: 16px; }
   .texto {
     margin: 0px;
     padding: 20px;
     border-width: 5px; }
-  .queVer {
-    margin: 0px;
-    padding: 20px; }
-  .footer {
-    text-align: center; }
-  .footer p {
-    text-align: center; }
-  .derecho {
-    text-align: center; }
   .cajaNovedades {
     display: grid;
     margin: 0px 70px 150px;

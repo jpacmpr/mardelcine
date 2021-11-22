@@ -1,5 +1,52 @@
-.formulario{
-    color:  #F56FAD;
-    font-family: 'Carrois Gothic SC', sans-serif;   
-    font-weight: bold;
+.flex_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background:#222;
+    justify-content: center;
+    margin: 50px 30px;
+}
+
+.form{
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: solid 3px $celeste;
+    background: transparent;
+    color: $celeste;
+    font-size: 20px;
+}
+
+.form__input:focus {
+    background-color: #444;
+    outline: none;
+}
+
+
+.form textarea{
+    min-height: 140px;
+}
+
+.form__img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+}
+
+.form__img img{
+    width: 30%;
+    margin: auto;
+    
+}
+
+.form input:hover{
+    color: $azul;
 }

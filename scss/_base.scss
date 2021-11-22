@@ -8,6 +8,8 @@ $h1:map-get($encabezados, h1);
 $h2:map-get($encabezados, h2);
 /*Finaliza maps*/
 
+/*Color de los títulos*/
+
 h1{
     color: $h1;
 }
@@ -47,47 +49,17 @@ body{
     }
 }
 
-
-/*Barra de navegación*/
-
+/*Menú*/
 nav{
     ul{
-        list-style: none;
-        font-size: 0;
         li{
-            display: inline-block;
-            position: relative;
-            text-align: center;
             font-family: 'Carrois Gothic SC', sans-serif;
+            font-size: 22px;
             font-weight: bold;
-            font-size: 20px;
+            text-align: center;
         }
-     }
-    .menu{
-        list-style-type: none;
-        padding: 0%;
-        width: 100%;
-        max-width: 1000px;
-        text-align: center;
-        margin: 50px;
-        li{
-            a{
-                text-decoration: none;
-                display: inline-block;
-                padding: 20px;
-                color: $azul;
-                &:hover{
-                    color: $rosa;
-                    transform: scale(1.2,1.2 );
-                }
-            }
-          }
-        }
+      }
     }
-
-/*Finaliza barra de navegación*/
-
-
 
 /*Titulos y textos*/
 
@@ -95,6 +67,7 @@ nav{
     margin: 20px 150px;
     padding: 20px;
     border-width: 5px;
+    
 }
 
 h2{
@@ -107,7 +80,7 @@ h2{
     font-family: 'Carrois Gothic SC', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1.4px
+    letter-spacing: 1.2px
 }
 
 
@@ -139,9 +112,10 @@ p{
 
 .footer{
     color: blueviolet;
+    text-align: center;
     
     .derecho{
-        text-align: right;
+        text-align: center;
         font-weight: bold;
         font-size: 13px;
         margin-top: 15px;

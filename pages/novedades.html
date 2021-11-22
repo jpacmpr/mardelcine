@@ -20,21 +20,36 @@
 
 
 <body>
-    <header class="contenedor">
-        <div class="logo">
-            <img src="../img/mardelcine.png" width="300px" alt="logo">
-            <h1>Novedades del Cine</h1>
-        </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="criticas.html">Críticas</a></li>
-                    <li><a href="conocenos.html">Conócenos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/mardelcine.png" alt="logo" width="250px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/criticas.html">Críticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/conocenos.html">Conócenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
 
     <main class="cajaNovedades">
@@ -84,10 +99,12 @@
     <hr>
 
     <footer class="footer">
+        <div>           
+            <a href="http://instagram.com/mardelcine"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>           
+        </div>
         <div>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitter"></i>
             <p class="derecho">Todos los derechos reservados.</p>
         </div>
     </footer>
